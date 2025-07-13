@@ -1,56 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Bilal Killisly</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bilal Killisly | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
-    <header id="hero">
-        <!-- your name -->
-        <h1>Hi, I'm Bilal</h1>
-        <!-- tagline -->
-        <h2>Your next favourite dev!💻</h2>
-        <!-- buttons: Resume, Projects -->
-    </header>
 
-    <nav>
-        <!-- simple nav or skip for 1-pager -->
-    </nav>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
-    <br>
 
-    <main>
-        <section id="about">
-            <h1>About Me!</h1>
-            <!-- bio -->
-            <p>I'm Bilal, a CS student and self-taught developer who builds clean, fast, and sometimes unhinged projects just to see what’s possible. From API-powered dashboards to random bots that shouldn’t exist, I love turning late-night ideas into real tools.</p>
-            <p> </p>
-            <p>Currently exploring web dev, AI, and whatever tech rabbit hole I fall into next.</p>
-            <!-- optional photo -->
-        </section>
+<!-- 🧠 HERO SECTION / HEADER -->
+<header id="hero">
+    <h1>Hi, I'm Bilal</h1>
+    <p>Your next favourite dev!💻</p>
 
-        <section id="projects">
-            <!-- project cards -->
-            <!-- title, tech, GitHub/demo buttons -->
-        </section>
+    <div class="buttons">
+        <a href="#projects">View Projects</a>
+        <a href="#contact">Contact Me</a>
+    </div>
+</header>
 
-        <section id="skills">
-            <!-- skill icons or list -->
-            <!-- currently learning? -->
-        </section>
+<!-- 📖 ABOUT ME SECTION -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>I’m a computer science student who enjoys building things that actually do something, from web apps and APIs to Discord bots and AI models. Whether it’s automating a task, solving a problem, or just messing around with code, I like projects that teach me something new and feel good to use.</p>
+    <!-- Optional: Add a profile photo -->
+    <img src="assets/edited_dog_photo.jpg" alt="Bilal Killisly">
+</section>
 
-        <section id="contact">
-            <!-- email, GitHub, LinkedIn -->
-            <!-- optional form -->
-        </section>
-    </main>
+<!-- 🛠️ PROJECTS SECTION -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>🎧 "Mood2Mic" — AI-Powered Music Recommender</h3>
+            <p>Mood2Mic is a web app that recommends music based on how you're feeling. Just type in a mood, thought, or short journal-style sentence, and the app uses an emotion detection model to figure out your vibe and match it with songs that fit.</p>
+            <p>It combines natural language processing and real-time API calls to deliver personalized music suggestions, turning your thoughts into playlists, no algorithms pretending you’re happy when you’re clearly not.</p>
+            <h3>Tech Used: </h3>
+            <ul>
+                <li>Frontend: HTML, CSS, JavaScript</li>
+                <li>Backend: FastAPI, Python (for model inference), HuggingFace Transformers</li>
+                <li>APIs: Perplexity.ai (music discovery results)</li>
+            </ul>
+            <a href="https://github.com/bk0704/Mood2Mic" target="_blank">GitHub</a>
+        </div>
 
-    <footer>
-        <!-- your name + © year -->
-        <!-- optional social icons -->
-    </footer>
+        <!-- Copy & paste more .project-card divs as needed -->
+    </div>
+</section>
+
+<!-- ⚙️ SKILLS SECTION -->
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li><!-- Skill 1 (e.g. HTML) --></li>
+        <li><!-- Skill 2 (e.g. CSS) --></li>
+        <li><!-- Skill 3 (e.g. JavaScript) --></li>
+        <!-- Add more as needed -->
+    </ul>
+</section>
+
+<!-- 📫 CONTACT SECTION -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:youremail@example.com"><!-- your@email.com --></a></p>
+    <p>GitHub: <a href="https://github.com/yourusername" target="_blank"><!-- yourusername --></a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank"><!-- linkedin.com/in/... --></a></p>
+</section>
+
+<!-- 🦶 FOOTER -->
+<footer>
+    <p>©Bilal Killisly — 2025</p>
+</footer>
+
 </body>
 </html>
